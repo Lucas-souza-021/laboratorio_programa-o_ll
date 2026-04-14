@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Aula 14-04</title>
+    <style>
+        h2{
+            color:brown;
+            background-color:black;
+            font-family: "Arial";
+        }
+        div{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+     <div id="icon" style="width: 68px; height: 100px; position: absolute; pointer-events: none; z-index: 9999; transition: all 0.1s ease-out;">
+
+    <img src="gato.webp" alt="Icone" style="width: 100%; height: 60%;">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    $(document).mousemove(function(e) {
+        // Atualiza a posição instantaneamente no JS
+        // O "suave" vem do 'transition: all 0.1s' no CSS lá em cima
+        $('#icon').css({
+            top: e.pageY + 5 + 'px', 
+            left: e.pageX + 10 + 'px'
+        });
+    });
+});
+</script>
+
+    
+    <div>
+    <h2 style="color:blueviolet; font-family: sans-serif;">Elemento DIV</h2>
+    <p>O elemento div serve como um container para outros elementos HTML. É um elemento do tipo <strong> block  </strong>. Isso significa que ele força uma quebra de uma linha antes e depois do elemento</p>
+    </div>
+    <div>
+        <h2>Introdução ao CSS</h2>
+        <p> Configurações de estilo podem ser aplicadas ao HTML de diferentes formas.</p>
+        <ul>
+            <li> CSS Inline</li>
+            <li> Tag Style</li>
+            <li> Tag Link</li>
+        </ul>
+    </div>
+
+</body>
+</html>

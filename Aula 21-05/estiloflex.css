@@ -1,0 +1,11 @@
+.conteudo-principal{
+    background-color: aliceblue;
+}
+.rodape{
+    background-color: blanchedalmond;
+}
+.todo-conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
